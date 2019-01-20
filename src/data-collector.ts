@@ -9,7 +9,7 @@ export class DataCollector {
     public async get(url: string, updateAfter: number): Promise<any> {
         const numberOfMilliSeconds: number = updateAfter
         if (this.lastRequestTimestamp === undefined ||
-            new Date() > new Date(this.lastRequestTimestamp.getTime() + numberOfMilliSeconds)) {
+            new Date() > new Date(Number(this.lastRequestTimestamp.getTime()) + numberOfMilliSeconds)) {
             // tslint:disable-next-line:no-console
             console.log("return new data")
             this.result = JSON.parse(await request.get(url))
