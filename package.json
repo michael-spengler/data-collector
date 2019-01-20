@@ -1,5 +1,5 @@
 {
-  "name": "data-collector",
+  "name": "www-data-collector",
   "version": "0.1.0",
   "description": "As simple as it gets",
   "main": "./dist/index.js",
