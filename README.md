@@ -7,9 +7,11 @@ As simple as it gets
 3. Make sure to keep your APIKey secret e.g. by adding your config file name (.env) to .gitignore.
 
 ## Usage Example
-    import { DataCollector } from "data-collector"
+    import { DataCollector } from "www-data-collector"
     import { ConfigurationReader } from "configuration-reader"
     import * as path from "path"
+
+    const dataCollector = new DataCollector()
 
     const apiKey: string = configurationReader.get("APIKey")
     const url: string = `https://anyurlwithyourapikey?apikey=${apiKey}`

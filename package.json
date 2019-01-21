@@ -1,6 +1,6 @@
 {
   "name": "www-data-collector",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "As simple as it gets",
   "main": "./dist/index.js",
   "scripts": {
